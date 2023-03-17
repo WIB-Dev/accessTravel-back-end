@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'dj_rest_auth',
+    'bookings',
+    'trips',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +83,8 @@ WSGI_APPLICATION = 'accesTravel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'userdb.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'accessTavel.sqlite3',
     }
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
