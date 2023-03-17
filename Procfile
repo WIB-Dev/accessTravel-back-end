@@ -1,1 +1,1 @@
-worker: python manage.py runserver
+web: gunicorn accesTravel.wsgi --log-file -
